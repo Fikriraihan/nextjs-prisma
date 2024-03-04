@@ -6,7 +6,7 @@ import * as bcrypt from "bcrypt";
 import NextAuth from "next-auth/next";
 import { User } from "@prisma/client";
 
-const authOptions: NextAuthOptions = {
+export const authOptions: NextAuthOptions = {
   pages: {
     signIn: "/auth/signin",
   },
