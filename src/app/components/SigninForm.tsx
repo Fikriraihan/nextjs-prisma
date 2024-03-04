@@ -35,7 +35,7 @@ const SigninForm = (props: Props) => {
     if (status === "authenticated" && data?.user) {
       router.push("/");
     }
-  }, [data, status]);
+  }, [data, status, router]);
 
   const handleLogin: SubmitHandler<InputType> = async (data) => {
     const result = await signIn("credentials", {

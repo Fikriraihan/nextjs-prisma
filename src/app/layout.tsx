@@ -5,8 +5,6 @@ import Navbar from "./components/AppBar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Providers } from "./providers";
-import { authOptions } from "./api/auth/[...nextauth]/route";
-import { getServerSession } from "next-auth";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -27,7 +27,7 @@ const ProductScreen = () => {
     const params = new URLSearchParams(searchParams);
     params.delete("keyword");
     router.replace(`${pathName}?${params.toString()}`);
-  }, []);
+  });
 
   const handleSearch = (val: any) => {
     const params = new URLSearchParams(searchParams);
